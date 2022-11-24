@@ -64,6 +64,13 @@ print(type(numero1) == type(numero2))
 #false
 #valida el contenido y valida tambien el tipo de dato
 
+#MAYOT | MAYOR IGUAL
+print(10 > 9.58)
+print(10 > int('5'))
+print(50 >= 30)
 
+# MENOR | menor o igual
+print(50 < 80)
+print(10 <= 50)
 
-
+print(100>= int(float("40.24")))
