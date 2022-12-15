@@ -1,0 +1,4 @@
+git add -A 
+git commit -m "listas"
+git push
+

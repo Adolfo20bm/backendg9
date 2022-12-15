@@ -74,3 +74,31 @@ print(50 < 80)
 print(10 <= 50)
 
 print(100>= int(float("40.24")))
+
+#-----------------------
+#OPERADORES DE LOGICOS
+#  and &&
+#  || para OR
+
+eduardo=30
+ronald=25
+henry=25
+carmen=19
+angel=15
+
+print((angel > eduardo) and (ronald < henry))
+print((eduardo > angel) and (carmen < ronald))
+
+print((carmen < ronald) or (eduardo < ronald))
+
+#  OPERADORES DE IDENTRIDAD
+verduras = ['A','B','C']
+
+print('A' in verduras)
+print('C' not in verduras)
+
+
+
+
+
+
