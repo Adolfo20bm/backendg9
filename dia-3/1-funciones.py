@@ -1,53 +1,45 @@
+# Funciones definidas por el usuario
 def miFuncion():
-    print('Hola Mundo')
+  print('Hola mundo')
 
-def suma(a,b):
-    return a+b
+def suma(a, b):
+  return a + b
 
 def comprobarEdad(edad):
-    if(edad>=18):
-        return 'eres mayor de edad'
-    else:
-        return 'No eres mayor de edad, no puedes ingresar'
+  if (edad >= 18):
+    return 'Eres mayor de edad'
+  else:
+    return 'No eres mayor de edad, no puedes ingresar'
 
-edad = input('Ingrese su edad: ')
-edad = int(edad)
+# edad = input('Ingrese su edad: ')
+# edad = int(edad)
+# print(comprobarEdad(edad))
 
-#miFuncion()
-#print(suma(3,5))
-#print(comprobarEdad(10))
-#par aver el tipo de variable    --->   print(type(edad))
-#print(comprobarEdad(edad))
-
-alumnos = ['eduardo','Pepe','Jose','Miguel','Julia','Raul']
+alumnos = ['Eduardo', 'Pepe', 'Jose', 'Miguel', 'Julia', 'Raul']
 
 def buscarNombre():
-    if not 'Eduardo' in alumnos:
-        return False
-    return True
+  if not 'Eduardo' in alumnos:
+    return False
+  # else:
+  #   return True
+  return True
 
-#Ingresar una lista de nombres(4 nomrbres) y que una funcion haga la busqueda del ultimo nombre(5to nombre)
 
-nombres=[]
 
-p_nombre = input('Ingrese el nombre 1')
-s_nombre = input('Ingrese el nombre 2')
-t_nombre = input('Ingrese el nombre 3')
-c_nombre = input('Ingrese el nombre 4')
-q_nombre = input('Ingrese el nombre 5')
+todos_lo_nombres = input('Ingrese nombres separados por comas: ')
 
-nombres.append(p_nombre)
-nombres.append(s_nombre)
-nombres.append(t_nombre)
-nombres.append(c_nombre)
-nombres.append(q_nombre)
+nombre_a_buscar = input('Ingrese el nombre a buscar: ')
 
-nombre_a_buscar = input('Ingrese el nombre a buscar')
+def separarNombres(lista_nombres):
+  nombres = lista_nombres.split(',')
+  return nombres
+
 
 def buscarPersona(nombre):
-    if nombre in nombres:
-        #el format lo va a insertar en la llave
-        return '{} ha sido encontrado {}'.format(nombre, 'textoo')
-    return 'No pudimos encontrar a {}'.format(nombre)
+  array_nombres = separarNombres(todos_lo_nombres)
+
+  if nombre in array_nombres:
+    return '{} ha sido encontrado {}'.format(nombre, '😃')
+  return f'No pudimos encontrar a {nombre} {"😢"}'
 
 print(buscarPersona(nombre_a_buscar))
