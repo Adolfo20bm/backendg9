@@ -27,7 +27,37 @@ print(resultado)
 resultado = sumar_n_numeros(10,5,18,7,22,56,89,15,14,13,15,18,19,14,17,20)
 print(resultado)
 
-def inscribir_personas(persona):
-    print(persona)
-
+def filtro(**kwargs):
     
+    # kwargs > keyword argument > recibiremos un numero ilimitado de parametros pero utilizando el nombre del parametro y su valor
+
+    print(kwargs)
+    for llave in kwargs.keys():
+        #print(llave)
+        valor = kwargs.get(llave)
+        print(llave,':',valor)
+
+filtro(nombre='Antonio', edad=18,sexo='M')
+filtro(nombre='Antonio', sexo='M',nacionalidad='Peruano')
+
+curso = {
+    'nombre':'Matematica',
+    'dificultad':'Intermedio',
+    'experiencia':'Ninguna',
+    0:'hola'
+}
+
+print(curso)
+print(curso.keys())
+print(curso.values())
+print(curso[0])
+print(curso['dificultad'])
+print(curso.get('calificacion', 'No hay p'))
+print(curso.get('nombre', 'No hay'))
+#modificar valores en mi diccionario, si esa llave no existe, entonces se creara
+curso['mas_info']='Esta es un ainformacion adicioanl'
+
+#Metodo get solamente sirve para visualixar la inormacion, mas no para asignacion
+#curso.get('otra_info')= 'esta es otra informacioin'
+
+
