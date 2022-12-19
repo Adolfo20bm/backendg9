@@ -1,0 +1,18 @@
+pip install NOMBRE:LIBRERIA > instalar la libreria, si no la encuentra lanzara un error
+py -m pip install --upgrade pip > actualizar pip(gestor de paquetes) a la ultima version
+pip freeze > lista todas las librerias instaladas en el scope actualizar
+pip list > lista todas las librerias instaladas manuaol uy predeterminadamente
+
+FORMAR DE LEVANTAR EN ENTONRNO
+
+WINDOWWS:
+
+- CMD O POWERSHELL:
+    entorno_flask/Scripts/activate
+
+-GITBASH:
+    source  entorno_flask/bin/activate
+- MAC O LINUX:
+    source  entorno_flask/bin/activate
+
+
