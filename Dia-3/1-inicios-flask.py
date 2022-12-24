@@ -1,6 +1,7 @@
 from flask import Flask, request
 #es toda la informacion que puedo leer del usuario, dentro de el body
 from datetime import datetime
+from flask_cors import CORS
 
 usuarios = [
     {
@@ -14,6 +15,13 @@ usuarios = [
 # __name__
 #print(__name__)
 app = Flask(__name__)
+
+#declarar los cors, intecambio deorigen de recursos compartidos
+CORS(app)
+
+
+
+
 
 #usaremos el metodo route
 #Endpoint es cuando definimos una ruta para que pueda ser accedida
@@ -79,3 +87,4 @@ def listar():
 # del proyecto reiniciara automaticamente el servidor
 app.run(debug=True)
 
+#hacer el frontend con md-tables
