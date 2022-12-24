@@ -11,8 +11,13 @@ WINDOWWS:
     entorno_flask/Scripts/activate
 
 -GITBASH:
-    source  entorno_flask/bin/activate
+    source entorno_flask/bin/activate
 - MAC O LINUX:
     source  entorno_flask/bin/activate
 
+deactivate mand a dormir al entorno
 
+para desinstalar las libreerias flask
+pip uninstall flask
+pip uninstall colorama
+pip uninstall itsdangerous
