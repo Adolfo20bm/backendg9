@@ -8,8 +8,3 @@ class UsuarioModel(conexion.Model):
     nombre = Column(type_ = types.String(length=45), nullable=False)
     correo = Column(type_ = types.String(length=45), nullable=False, unique=True)
     telefono = Column(type_ = types.String(length=15))
-
-#Flask-Migrate
-#pip install Flask-Migrate
-
-#---->>>>>luego seguimos en app.py
